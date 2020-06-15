@@ -35,12 +35,10 @@ class Bot:
         self._dispatchEvent(update)
         lastUpdateId += 1
         updateId = lastUpdateId
-        # print(3, updateId, update)
       
       time.sleep(2)
 
   def _dispatchEvent(self, updates: List[Update]):
-    # print(updates)
     for update in updates:
       update = Update(update)
       print(update)
