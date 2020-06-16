@@ -27,11 +27,10 @@ class MoviesAndSeries:
         content_no_css = re.sub(r'(<style[^<]+|style=(\"|\')[^\"\']+(\"|\'))', '', r.text)
         urls = re.findall(r'(https:\/\/altadefinizione\.\w+\/\w+\/[^\"]+)\"\s*data-url', content_no_css)
         titles = re.findall(f'-title">([^<]+)', content_no_css)
-        # print(urls, len(titles))
+        
         for i, title in enumerate(titles):
             if query in title.lower():
                 self.list_title.append((html.unescape(title).title(), urls[i]))
-        
         return self.list_title
 
     def getEpisodeList(self, indexTitle=0):

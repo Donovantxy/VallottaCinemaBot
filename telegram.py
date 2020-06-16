@@ -1,4 +1,20 @@
 from typing import List, Dict, Tuple
+import json
+
+class Config:
+  def __init__(self, obj: Dict):
+    self.token: str = obj['token']
+    self.domain: str = obj['domain']
+    self.url: str = obj['url']
+    self.username: str = obj['username']
+    self.first_name: str = obj['first_name']
+    self.idBot: str = obj['idBot']
+    self.commanads: List[str] = obj['commanads']
+    self.__obj = obj
+  
+  def __str__(self):
+    return json.dumps(self.__obj, indent=2)
+  
 
 class Update(object):
   def __init__(self, update = None, update_id=0):
@@ -18,7 +34,7 @@ class Update(object):
 
 class Message(object):
   def __init__(self, message = None):
-    self.message_id: int = message['message_id'] if 'message_id' in message else None
+    self.message_id: int = message['message_id']
     # OPTIONALs
     self.animation: Animation = message['animation'] if 'animation' in message else None
     self.audio: Audio = message['audio'] if 'audio' in message else None
@@ -71,16 +87,16 @@ class Message(object):
   
   def __str__(self):
     try:
-      return f'Update: {self.update_id} - {Message(self.message).text} by {self.message["from"]["id"]}'
+      return f'Message: {self.message_id} - "{self.text}" by user_id: {self.fromUser["id"]} - Has entities: {self.entities is not None}'
     except:
-      return f'ERROR -> Update: {self.update_id}'
+      return f'ERROR -> Message: {self.message_id}'
   
 
-class User:
+class User(object):
   def __init__(self, user = None):
-    self.id: int = user['id'] if 'id' in user else None
-    self.is_bot: bool = user['is_bot'] if 'is_bot' in user else None
-    self.first_name: str = user['first_name'] if 'first_name' in user else None
+    self.id: int = user['id']
+    self.is_bot: bool = user['is_bot']
+    self.first_name: str = user['first_name']
     # OPTIONALs
     self.last_name: str = user['last_name'] if 'last_name' in user else None
     self.username: str = user['username'] if 'username' in user else None
@@ -90,10 +106,10 @@ class User:
     self.supports_inline_queries: bool = user['supports_inline_queries'] if 'supports_inline_queries' in user else None
 
 
-class Chat:
-  def __int__(self, chat = None):
-    self.id: int = chat['id'] if 'id' in chat else None
-    self.type: str = chat['type'] if 'type' in chat else None
+class Chat(object):
+  def __init__(self, chat = None):
+    self.id: int = chat['id']
+    self.type: str = chat['type']
     # OPTIONALs
     self.title: str = chat['title'] if 'title' in chat else None
     self.username: str = chat['username'] if 'username' in chat else None
@@ -111,20 +127,22 @@ class Chat:
 
 class MessageEntity:
   def __init__(self, messageentity = None):
-    self.length: int = messageentity['length'] if 'length' in messageentity else None
-    self.offset: int = messageentity['offset'] if 'offset' in messageentity else None
-    self.type: str = messageentity['type'] if 'type' in messageentity else None
+    self.length: int = messageentity['length']
+    self.offset: int = messageentity['offset']
+    self.type: str = messageentity['type']
     # OPTIONALs
     self.language: str = messageentity['language'] if 'language' in messageentity else None
     self.url: str = messageentity['url'] if 'url' in messageentity else None
     self.user: User = User(messageentity['user']) if 'user' in messageentity else None
+    # CUSTOM
+    self.isCommand = self.type == 'bot_command'
 
 class PhotoSize:
   def __init__(self, photo):
-    self.file_id: str = photo['file_id'] if 'file_id' in photo else None
-    self.file_unique_id: str = photo['file_unique_id'] if 'file, photo_unique_id' in photo else None
-    self.width: int = photo['width'] if 'width' in photo else None
-    self.height: int = photo['height'] if 'height' in photo else None
+    self.file_id: str = photo['file_id']
+    self.file_unique_id: str = photo['file_unique_id']
+    self.width: int = photo['width']
+    self.height: int = photo['height']
     # OPTIONALs
     self.file_size: int = photo['file_size'] if 'file_size' in photo else None
 

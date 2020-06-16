@@ -69,7 +69,7 @@ run_simple('0.0.0.0', 443, app, ssl_context=context)
 # from moviesandseries import MoviesAndSeries
 # import re
 
-# mes = MoviesAndSeries(True)
+# mes = MoviesAndSeries()
 
 def runBot(mes):
     tryAgain = 'or run another search'

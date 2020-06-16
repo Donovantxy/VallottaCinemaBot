@@ -2,19 +2,22 @@ import requests
 import json
 import time
 from typing import List, Dict, Tuple
+from telegram import Config
 from telegram import Update
 from telegram import Message
-from dispatcher import Dispatcher
+from botvallottacinema import BotVallottaCinema
 
 class Bot:
 
   def __init__(self, pathConfig):
     with open(pathConfig, 'r') as f:
-      config = json.load(f)
-      self._apiUrl = f'{config["url"]}{config["token"]}'
+      config = Config(json.load(f))
+      self._apiUrl = f'{config.url}{config.token}'
       self._updates: List[Update]
-      print(json.dumps(config, indent=2))
+      self.cinema = BotVallottaCinema(self._apiUrl, config.idBot, config.commanads, self)
+      print(config)
   
+
   def run(self):
     lastUpdateId = self._getUpdate()[-1]['update_id']
     print('first', lastUpdateId)
@@ -31,20 +34,26 @@ class Bot:
         updateId = 0
       elif updateId == lastUpdateId:
         updateId += 1
-        self._dispatchEvent(update)
+        self._dispatchAction(update)
       else:
-        self._dispatchEvent(update)
+        self._dispatchAction(update)
         lastUpdateId += 1
         updateId = lastUpdateId
       
       time.sleep(2)
 
-  def _dispatchEvent(self, updates: List[Update]):
+
+  def sendMessage(self, msg: str, chatId: str):
+    print('sendMessage', chatId, msg)
+    req = requests.get(f'{self._apiUrl}/sendMessage?chat_id={chatId}&text={msg}')
+    print(req.text)
+
+
+  def _dispatchAction(self, updates: List[Update]):
     for update in updates:
-      # Dispatcher(update).dispatch()
-      print(Update(update).message)
-      
-  
+      self.cinema.dispatchAction(Update(update))
+
+
   def _getUpdate(self, offset='') -> List[Update]:
     self._updates = list(json.loads(requests.get(f'{self._apiUrl}/getUpdates?offset={offset}').text)['result'])
     if len(self._updates):
@@ -52,6 +61,7 @@ class Bot:
 
     self._updates = [{'update_id':0}]
     return self._updates
+
 
   def _printUpdate(self):
     print(json.dumps(self._updates, indent=2))
