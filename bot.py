@@ -4,6 +4,7 @@ import time
 from typing import List, Dict, Tuple
 from telegram import Update
 from telegram import Message
+from dispatcher import Dispatcher
 
 class Bot:
 
@@ -40,8 +41,9 @@ class Bot:
 
   def _dispatchEvent(self, updates: List[Update]):
     for update in updates:
-      update = Update(update)
-      print(update)
+      # Dispatcher(update).dispatch()
+      print(Update(update).message)
+      
   
   def _getUpdate(self, offset='') -> List[Update]:
     self._updates = list(json.loads(requests.get(f'{self._apiUrl}/getUpdates?offset={offset}').text)['result'])
