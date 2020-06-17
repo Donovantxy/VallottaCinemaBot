@@ -11,11 +11,11 @@ class Bot:
 
   def __init__(self, pathConfig):
     with open(pathConfig, 'r') as f:
-      config = Config(json.load(f))
-      self._apiUrl = f'{config.url}{config.token}'
+      self.config = Config(json.load(f))
+      self._apiUrl = f'{self.config.url}{self.config.token}'
       self._updates: List[Update]
-      self.cinema = BotVallottaCinema(self._apiUrl, config.idBot, config.commanads, self)
-      print(config)
+      # self.cinema = BotVallottaCinema(self._apiUrl, config.idBot, config.commanads, self)
+      print(self.config)
   
 
   def run(self):
@@ -24,6 +24,7 @@ class Bot:
     lastUpdateId = lastUpdateId + 1 if lastUpdateId > 0 else 0
     updateId = lastUpdateId
     print('init', lastUpdateId)
+    self.cinema = BotVallottaCinema(self._apiUrl, self.config.idBot, self.config.commanads, self)
     time.sleep(2.5)
     
     while True:
@@ -43,11 +44,8 @@ class Bot:
       time.sleep(2)
 
 
-  def sendMessage(self, msg: str, chatId: str):
-    print('sendMessage', chatId, msg)
-    req = requests.get(f'{self._apiUrl}/sendMessage?chat_id={chatId}&text={msg}')
-    print(req.text)
-
+  def sendMessage(self, msg: Dict):
+    req = requests.get(f'{self._apiUrl}/sendMessage', params=msg)
 
   def _dispatchAction(self, updates: List[Update]):
     for update in updates:

@@ -2,7 +2,8 @@ import requests
 import html
 import re
 import json
-
+from urllib.parse import quote_plus
+from requests.utils import requote_uri
 
 class MoviesAndSeries:
 
@@ -22,15 +23,17 @@ class MoviesAndSeries:
 
     def getTitleList(self, query):
         self.list_title = list()
-        query = query.lower()
-        r = requests.get(f'https://altadefinizione.mx/?s={query.replace(" ", "+")}')
+        # print(f'https://altadefinizione.boutique/?s={quote_plus(query)}')
+        r = requests.get(f'https://altadefinizione.boutique/?s={quote_plus(query)}')
+        # self._contentFromUrl(filename='test.html')
         content_no_css = re.sub(r'(<style[^<]+|style=(\"|\')[^\"\']+(\"|\'))', '', r.text)
+        
         urls = re.findall(r'(https:\/\/altadefinizione\.\w+\/\w+\/[^\"]+)\"\s*data-url', content_no_css)
         titles = re.findall(f'-title">([^<]+)', content_no_css)
         
         for i, title in enumerate(titles):
             if query in title.lower():
-                self.list_title.append((html.unescape(title).title(), urls[i]))
+              self.list_title.append((html.unescape(title).title().replace('\u2013', '-').replace(' - Streaming', ''), urls[i]))
         return self.list_title
 
     def getEpisodeList(self, indexTitle=0):
@@ -46,7 +49,7 @@ class MoviesAndSeries:
             episodeLinks = re.findall(r'https:\/\/altadefinizione.mx\/film_in_streaming\/\w+\/\w+', contentPageShow)
             if len(episodeLinks) > 0:
                 # print([(self.list_title[indexTitle][0], re.sub('\/0$', '/1', episodeLinks[0]))])
-                self.list_episodes = [(self.list_title[indexTitle][0], re.sub('\/0$', '/1', episodeLinks[0]))]
+                self.list_episodes = [(self.list_title[indexTitle][0], re.sub(r'\/0$', r'/1', episodeLinks[0]))]
         return self.list_episodes
         
 
@@ -79,6 +82,9 @@ class MoviesAndSeries:
                 with open(filename, 'w') as f:
                     f.write(content)
             return content
+
+    def isSeries(self, index):
+      return '/serie' in self.list_title[int(index)][1]
 
     # def _do_you_wish_to_continue(self):
     #     # do_you_wish_to_continue = input("\nDo you wish to continue (y/yes/ok) or [num] or (list/l): ")
