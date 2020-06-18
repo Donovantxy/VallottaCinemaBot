@@ -14,8 +14,6 @@ class Bot:
       self.config = Config(json.load(f))
       self._apiUrl = f'{self.config.url}{self.config.token}'
       self._updates: List[Update]
-      # self.cinema = BotVallottaCinema(self._apiUrl, config.idBot, config.commanads, self)
-      print(self.config)
   
 
   def run(self):
