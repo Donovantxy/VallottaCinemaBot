@@ -73,7 +73,7 @@ class BotVallottaCinema(Bot):
           elif '/movie' in message.text:
             self.showMovieUrl(message)
           elif '/series' in message.text:
-            self.index = message.text.replace('/series', '')
+            self.index = int(message.text.replace('/series', '')) - 1
             self.showSeriesEpisodes(message, self.index)
           elif '/ep' in message.text:
             self.showEpisodeUrl(message)
