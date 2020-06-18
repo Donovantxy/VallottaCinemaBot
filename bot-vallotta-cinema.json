@@ -1,0 +1,9 @@
+{
+  "token": "977345033:AAHF1uP4aKlQedE25kGg8Vj5Z6jZpcfX5Kg",
+  "domain": "https://www.vallotta-party-bot.com",
+  "url": "https://api.telegram.org/bot",
+  "username": "VallottaCinemaBot",
+  "first_name": "vallotta-cinema",
+  "idBot": "977345033",
+  "commands": ["/find", "/cerca"]
+}
