@@ -127,4 +127,35 @@ Fulvio as [FullView] is looking for: "i viaggiatori"
 [Thu Jun 18 13:43:32 2020] :: Fulvio as [FullView] - series 1
 [Thu Jun 18 13:43:37 2020] :: Fulvio as [FullView] - episode: Chernobyl Diaries La mutazione 2012
 
-[Thu Jun 18 16:26:15 2020] :: Fulvio as [FullView] is looking for: "superman"
+
+[Thu Jun 18 20:55:05 2020] :: Fulvio as [FullView] is looking for: "batman"
+[Thu Jun 18 20:55:08 2020] :: 
+user_id: 51914389
+chat_id: 51914389
+first_name: Fulvio
+username: FullView
+cmd: /find batman
+results: [('Batman Forever 1995', 'https://altadefinizione.boutique/film/batman-forever-1995-streaming/'), ('Batman E Robin 1997', 'https://altadefinizione.boutique/film/batman-e-robin-1997-streaming/'), ('Batman E Mr. Freeze: Subzero 1998', 'https://altadefinizione.boutique/film/batman-e-mr-freeze-subzero-1998-streaming/'), ('Batman - La Maschera Del Fantasma 1993', 'https://altadefinizione.boutique/film/batman-la-maschera-del-fantasma-1993-streaming/'), ('Batman Vs Teenage Mutant Ninja Turtles 2019', 'https://altadefinizione.boutique/film/batman-vs-teenage-mutant-ninja-turtles-2019-streaming/'), ('Batman: Hush 2019', 'https://altadefinizione.boutique/film/batman-hush-2019-streaming/'), ('Batman Begins 2005', 'https://altadefinizione.boutique/film/batman-begins-2005/'), ('Batman Ninja 2018', 'https://altadefinizione.boutique/film/batman-ninja-2018/'), ('Lego Batman - Il Film 2017', 'https://altadefinizione.boutique/film/lego-batman-il-film-2017/'), ('Batman 1989', 'https://altadefinizione.boutique/film/batman-1989-2/')]
+title_selected_index: 9
+title_selected: ('Batman 1989', 'https://altadefinizione.boutique/film/batman-1989-2/')
+episode_list: []
+episode_selected_index: 0
+url_show: https://altadefinizione.boutique/film/batman-1989-2/
+
+
+[Thu Jun 18 20:55:16 2020] :: Fulvio as [FullView] is looking for: "supermaxi"
+[Thu Jun 18 20:55:19 2020] :: Fulvio as [FullView] - series 0
+[Thu Jun 18 20:55:27 2020] :: 
+user_id: 51914389
+chat_id: 51914389
+first_name: Fulvio
+username: FullView
+cmd: /find supermaxi
+results: [('Ralph Supermaxieroe', 'https://altadefinizione.boutique/series/ralph-supermaxieroe/')]
+title_selected_index: 0
+title_selected: ('Ralph SuperMaxiEroe 01x01 02 Il mistero della vali', 'https://vcrypt.pw/akv/u2cai0rz62lk')
+episode_list: [('Ralph SuperMaxiEroe 01x01 02 Il mistero della vali', 'https://vcrypt.pw/akv/u2cai0rz62lk'), ('Ralph SuperMaxiEroe 01x03 L automobile trappola', 'https://vcrypt.pw/akv/vrk652fbi8ki'), ('Ralph SuperMaxiEroe 01x04 Prova a guardarti ragazz', 'https://vcrypt.pw/akv/638wlupqgt9g'), ('Ralph SuperMaxiEroe 01x05 Il pericolo rosso', 'https://vcrypt.pw/akv/ts3a9qws788m'), ('Ralph SuperMaxiEroe 01x06 Una madre troppo curiosa', 'https://vcrypt.pw/akv/z7ia67w7h3l6'), ('Ralph SuperMaxiEroe 01x07 I miei eroi sono sempre', 'https://vcrypt.pw/akv/4w4tgmv2131v'), ('Ralph SuperMaxiEroe 01x08 L incendiario', 'https://vcrypt.pw/akv/4i1apkbdanpz'), ('Ralph SuperMaxiEroe 01x09 Nuovi incarichi', 'https://vcrypt.pw/akv/70g1psp8rkd9'), ('Ralph SuperMaxiEroe 02x01 L asso del baseball', 'https://vcrypt.pw/akv/612rpk62u565'), ('Ralph SuperMaxiEroe 02x02 Operazione guastafeste', 'https://vcrypt.pw/akv/b20vc2qgzqle'), ('Ralph SuperMaxiEroe 02x03 Il collega miliardario', 'https://vcrypt.pw/akv/dmb86idrmpfl'), ('Ralph SuperMaxiEroe 02x04 I teppisti', 'https://vcrypt.pw/akv/nup96663i6lo'), ('Ralph SuperMaxiEroe 02x05 Un concerto di protesta', 'https://vcrypt.pw/akv/7vw4oftehhdi'), ('Ralph SuperMaxiEroe 02x06 Un mostro nel buio', 'https://vcrypt.pw/akv/3v6ck4w7krbn'), ('Ralph SuperMaxiEroe 02x07 La miniera maledetta', 'https://vcrypt.pw/akv/dpshkac45ide'), ('Ralph SuperMaxiEroe 02x08 Peste', 'https://vcrypt.pw/akv/uiqcssqi23v4'), ('Ralph SuperMaxiEroe 02x09 I treni danno alla testa', 'https://vcrypt.pw/akv/giguuc9mreve'), ('Ralph SuperMaxiEroe 02x10 Un volo top secret', 'https://vcrypt.pw/akv/edpw4w7w6nlh'), ('Ralph SuperMaxiEroe 02x11 Potenza dell ipnosi', 'https://vcrypt.pw/akv/k8usrh6zudw3'), ('Ralph SuperMaxiEroe 02x12 Solo un altro circo a tr', 'https://vcrypt.pw/akv/vug933d2ve8q'), ('Ralph SuperMaxiEroe 02x13 Attenti alla scossa', 'https://vcrypt.pw/akv/7s30vd9e52tb'), ('Ralph SuperMaxiEroe 02x14 Polli per un complotto', 'https://vcrypt.pw/akv/sk9tvu2wz4v9'), ('Ralph SuperMaxiEroe 02x15 Il triangolo del Diavolo', 'https://vcrypt.pw/akv/6grazg22cazf'), ('Ralph SuperMaxiEroe 02x16 Spionaggio sulla neve', 'https://vcrypt.pw/akv/piker0azfb6o'), ('Ralph SuperMaxiEroe 02x17 Sogni', 'https://vcrypt.pw/akv/mqtbao0q85z7'), ('Ralph SuperMaxiEroe 02x18 Il terribile esattore', 'https://vcrypt.pw/akv/dev07iov9h6l'), ('Ralph SuperMaxiEroe 02x19 Il buon samaritano', 'https://vcrypt.pw/akv/93qimgq7b82p'), ('Ralph SuperMaxiEroe 02x20 Capitan Bellybuster', 'https://vcrypt.pw/akv/7z7bug8p8sw6'), ('Ralph SuperMaxiEroe 02x21 Chi Key', 'https://vcrypt.pw/akv/t6pvm014sb39'), ('Ralph SuperMaxiEroe 02x22 Lill per Maxwell', 'https://vcrypt.pw/akv/z470h5uznfs9'), ('Ralph SuperMaxiEroe 03x01 Cane e gatto', 'https://vcrypt.pw/akv/u88v1op0su0a'), ('Ralph SuperMaxiEroe 03x02 Il prezzo giusto', 'https://vcrypt.pw/akv/n9vf7dm5nv0p'), ('Ralph SuperMaxiEroe 03x03 Una terribile vacanza', 'https://vcrypt.pw/akv/2fmiv2zdqbaf'), ('Ralph SuperMaxiEroe 03x04 L ultima vendetta', 'https://vcrypt.pw/akv/espb9ds86vea'), ('Ralph SuperMaxiEroe 03x05 Matrimonio lampo', 'https://vcrypt.pw/akv/wnl4u84k1kvi'), ('Ralph SuperMaxiEroe 03x06 Lo scienziato folle', 'https://vcrypt.pw/akv/7675z3sb2usb'), ('Ralph SuperMaxiEroe 03x07 La congiura del plutonio', 'https://vcrypt.pw/akv/d56ti8m07eet'), ('Ralph SuperMaxiEroe 03x08 Il ranger dello spazio', 'https://vcrypt.pw/akv/me0bn7bpwtws'), ('Ralph SuperMaxiEroe 03x09 Sol levante alla riscoss', 'https://vcrypt.pw/akv/aa0mb55gkn9n'), ('Ralph SuperMaxiEroe 03x10 Meghi e stregoni', 'https://vcrypt.pw/akv/r0nf4ark039u'), ('Ralph SuperMaxiEroe 03x11 Il complesso rock', 'https://vcrypt.pw/akv/z78rsvbgztfc'), ('Ralph SuperMaxiEroe 03x12 Uno splendido cavallo', 'https://vcrypt.pw/akv/aft4ofdhumzh'), ('Ralph SuperMaxiEroe 03x13 La vanit del potere', 'https://vcrypt.pw/akv/h38tcczsgtlh')]
+episode_selected_index: 9
+url_show: https://akvideo.stream/swvideoidy/10948.html
+
+
