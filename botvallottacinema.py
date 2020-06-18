@@ -94,7 +94,7 @@ class BotVallottaCinema(Bot):
         if hasattr(msg, 'chat'):
           pass
           results = ''
-          for i, title in enumerate(founds[:8]):
+          for i, title in enumerate(founds[:10]):
             results += f'/{"series" if self.mes.isSeries(i) else "movie"}<b>{i+1}</b> {title[0]}\n\n'
           
           self.sendMessage(chat.id, results, 'HTML')
