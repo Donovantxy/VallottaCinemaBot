@@ -41,6 +41,13 @@ class Bot:
       time.sleep(2)
 
 
+  def sendAction(self, chat_id: str, action: str = 'typing'):
+    requests.get(f'{self._apiUrl}/sendChatAction', params={
+      'chat_id': chat_id,
+      'action': action
+    })
+    
+
   def sendMessage(self, chat_id: str, msg: str, parse_mode: str = ''):
     requests.get(f'{self._apiUrl}/sendMessage', params={
       'chat_id': chat_id,

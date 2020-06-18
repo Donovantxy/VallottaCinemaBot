@@ -18,8 +18,7 @@ from bot import Bot
 '''
 {
   'update_id': 515620855, 
-  'message'
-  'edited_message': {
+  'message' OR 'edited_message': {
     'message_id': 1022,
     'from': {
       'id': 51914389,
@@ -68,6 +67,7 @@ class BotVallottaCinema(Bot):
       for entity in message.entities:
         entity = MessageEntity(entity)
         if entity.isCommand:
+          self.sendAction(Chat(message.chat).id)
           if any(command for command in ['/find', '/cerca'] if command in message.text):
             self.find(message)
           elif '/movie' in message.text:
