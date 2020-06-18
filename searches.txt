@@ -127,3 +127,4 @@ Fulvio as [FullView] is looking for: "i viaggiatori"
 [Thu Jun 18 13:43:32 2020] :: Fulvio as [FullView] - series 1
 [Thu Jun 18 13:43:37 2020] :: Fulvio as [FullView] - episode: Chernobyl Diaries La mutazione 2012
 
+[Thu Jun 18 16:26:15 2020] :: Fulvio as [FullView] is looking for: "superman"

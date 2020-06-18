@@ -32,24 +32,24 @@ class Bot:
         updateId = 0
       elif updateId == lastUpdateId:
         updateId += 1
-        self._dispatchAction(update)
+        self._loopUpdates(update)
       else:
-        self._dispatchAction(update)
+        self._loopUpdates(update)
         lastUpdateId += 1
         updateId = lastUpdateId
       
       time.sleep(2)
 
 
-  def sendMessage(self, chad_id: str, msg: str, parse_mode: str = ''):
+  def sendMessage(self, chat_id: str, msg: str, parse_mode: str = ''):
     requests.get(f'{self._apiUrl}/sendMessage', params={
-      'chat_id': chad_id,
+      'chat_id': chat_id,
       'text': msg,
       'parse_mode': parse_mode
     })
 
-  # _dispatchAction must be implemented in subclasses
-  def _dispatchAction(self, updates: List[Update]):
+  # _loopUpdates must be implemented in subclasses
+  def _loopUpdates(self, updates: List[Update]):
     pass
   
 

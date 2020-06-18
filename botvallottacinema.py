@@ -57,7 +57,7 @@ class BotVallottaCinema(Bot):
     self.curr_next = 0
 
 
-  def _dispatchAction(self, updates: List[Update]):
+  def _loopUpdates(self, updates: List[Update]):
     for update in updates:
       self.dispatchAction(Update(update))
 

@@ -16,7 +16,7 @@ class Config:
     return json.dumps(self.__obj, indent=2)
   
 
-class Update(object):
+class Update():
   def __init__(self, update = None, update_id=0):
     self.update_id: int = update['update_id']
     # OPTIONALs
@@ -32,7 +32,7 @@ class Update(object):
       return f'ERROR -> Update: {self.update_id}'
   
 
-class Message(object):
+class Message():
   def __init__(self, message = None):
     self.message_id: int = message['message_id']
     # OPTIONALs
@@ -92,7 +92,7 @@ class Message(object):
       return f'ERROR -> Message: {self.message_id}'
   
 
-class User(object):
+class User():
   def __init__(self, user = None):
     self.id: int = user['id']
     self.is_bot: bool = user['is_bot']
@@ -106,7 +106,7 @@ class User(object):
     self.supports_inline_queries: bool = user['supports_inline_queries'] if 'supports_inline_queries' in user else None
 
 
-class Chat(object):
+class Chat():
   def __init__(self, chat = None):
     self.id: int = chat['id']
     self.type: str = chat['type']
