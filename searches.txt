@@ -1,0 +1,129 @@
+Fulvio as [FullView] is looking for: "supergirl"
+Fulvio as [FullView] - series 3
+Fulvio as [FullView] - episode: Nana Supergirl 01 Una ragazza specialev5
+
+Fulvio as [FullView] is looking for: "uomo bionico"
+Fulvio as [FullView] is looking for: "milioni di dollari"
+Fulvio as [FullView] - series 0
+Fulvio as [FullView] - episode: L Uomo da sei Milioni di Dollari 00x03 Complotto I
+
+Fulvio as [FullView] is looking for: "donna bionica"
+Fulvio as [FullView] - series 0
+Fulvio as [FullView] - episode: LA DONNA BIONICA 01x01 Bentornata Jaime Parte 1
+
+Fulvio as [FullView] is looking for: "pollianna"
+Fulvio as [FullView] is looking for: "polianna"
+Fulvio as [FullView] is looking for: "pollianna"
+Fulvio as [FullView] is looking for: "pollyanna"
+Fulvio as [FullView] - series 0
+Fulvio as [FullView] - episode: Pollyanna 01 Piccola dolce Pollyanna
+
+Fulvio as [FullView] is looking for: "annette"
+Fulvio as [FullView] - series 0
+Fulvio as [FullView] - episode: Annette 01 I ragazzi delle Alpi
+
+Fulvio as [FullView] is looking for: "boys"
+VITA as [VitelloVitellozzo] is looking for: "/find"
+VITA as [VitelloVitellozzo] is looking for: "cernobil"
+VITA as [VitelloVitellozzo] is looking for: "Chernobyl"
+VITA as [VitelloVitellozzo] is looking for: "'chernobyl'"
+Fulvio as [FullView] is looking for: "chernobyl"
+Fulvio as [FullView] - series 0
+Fulvio as [FullView] - episode: Chernobyl 01x01 1 23 45
+
+Fulvio as [FullView] is looking for: "juventus"
+Fulvio as [FullView] - series 2
+Fulvio as [FullView] - episode: First Team Juventus 01x01
+
+Fulvio as [FullView] is looking for: "time"
+VITA as [VitelloVitellozzo] is looking for: "chernobyl"
+VITA as [VitelloVitellozzo] - series 0
+Fulvio as [FullView] is looking for: "amico ultraman"
+Fulvio as [FullView] - series 0
+VITA as [VitelloVitellozzo] - episode: 01x02 L abrogatore rubato
+
+Fulvio as [FullView] is looking for: "sliders"
+Fulvio as [FullView] is looking for: "i viaggiatori"
+[Wed Jun 17 18:03:31 2020] :: Fulvio as [FullView] is looking for: "i viaggiatori"
+[Wed Jun 17 18:03:35 2020] :: Fulvio as [FullView] - series 1
+[Wed Jun 17 18:03:41 2020] :: Fulvio as [FullView] - episode: I Viaggiatori 01x01 Pilota avi
+
+[Wed Jun 17 18:42:11 2020] :: Fulvio as [FullView] is looking for: "gossip girl"
+[Wed Jun 17 18:42:15 2020] :: Fulvio as [FullView] - series 0
+[Wed Jun 17 18:42:23 2020] :: Fulvio as [FullView] - series 0
+[Wed Jun 17 18:42:31 2020] :: Fulvio as [FullView] - episode: Gossip Girl 03x05 Le Nozze Di Rufus avi
+
+[Wed Jun 17 18:46:32 2020] :: Danilo is looking for: " breking bad"
+[Wed Jun 17 21:06:41 2020] :: Fulvio as [FullView] is looking for: "13 Reasons"
+[Wed Jun 17 21:07:09 2020] :: Fulvio as [FullView] is looking for: "13 ragioni"
+[Wed Jun 17 21:07:23 2020] :: Fulvio as [FullView] is looking for: "13"
+[Wed Jun 17 21:08:10 2020] :: Fulvio as [FullView] is looking for: "tredici"
+[Wed Jun 17 21:08:15 2020] :: Fulvio as [FullView] - series 0
+[Wed Jun 17 21:08:55 2020] :: Fulvio as [FullView] is looking for: " breking bad"
+[Wed Jun 17 21:30:45 2020] :: Fulvio as [FullView] is looking for: "Ken shiro"
+[Wed Jun 17 21:30:56 2020] :: Fulvio as [FullView] is looking for: "ken"
+[Wed Jun 17 21:31:13 2020] :: Fulvio as [FullView] is looking for: "hokuto"
+[Wed Jun 17 21:32:32 2020] :: Fulvio as [FullView] is looking for: "North star"
+[Wed Jun 17 21:32:58 2020] :: Fulvio as [FullView] is looking for: "il guerriero"
+[Wed Jun 17 21:33:17 2020] :: Fulvio as [FullView] - series 6
+[Wed Jun 17 21:33:27 2020] :: Fulvio as [FullView] - episode: Ken il Guerriero 001 Sotto il segno dell Orsa Magg
+
+[Wed Jun 17 21:35:00 2020] :: Fulvio as [FullView] is looking for: "kickboxer"
+[Wed Jun 17 21:36:17 2020] :: Fulvio as [FullView] is looking for: "spiderman"
+[Wed Jun 17 21:36:33 2020] :: Fulvio as [FullView] is looking for: "uomo ragno"
+[Wed Jun 17 21:36:50 2020] :: Fulvio as [FullView] is looking for: "Spiderman"
+[Wed Jun 17 21:37:07 2020] :: Fulvio as [FullView] is looking for: "spider-man"
+[Wed Jun 17 21:38:17 2020] :: Fulvio as [FullView] is looking for: "star trek"
+[Wed Jun 17 21:39:09 2020] :: Fulvio as [FullView] is looking for: "break day"
+[Thu Jun 18 08:21:46 2020] :: Fulvio as [FullView] is looking for: "suburra"
+[Thu Jun 18 08:21:52 2020] :: Fulvio as [FullView] - series 1
+[Thu Jun 18 08:21:55 2020] :: Fulvio as [FullView] - episode: Suburra La Serie 01x09
+
+[Thu Jun 18 08:22:06 2020] :: Fulvio as [FullView] is looking for: "chernobyl"
+[Thu Jun 18 08:22:10 2020] :: Fulvio as [FullView] - series 0
+[Thu Jun 18 08:22:19 2020] :: Fulvio as [FullView] - episode: Chernobyl 01x05 Vichnaya Pamyat
+
+[Thu Jun 18 09:47:53 2020] :: Fulvio as [FullView] is looking for: "maxi eroe"
+[Thu Jun 18 09:49:02 2020] :: Fulvio as [FullView] is looking for: "maxi eroe"
+[Thu Jun 18 09:51:38 2020] :: Fulvio as [FullView] is looking for: "maxi eroe"
+[Thu Jun 18 09:57:51 2020] :: Fulvio as [FullView] is looking for: "maxi eroe"
+[Thu Jun 18 09:58:50 2020] :: Fulvio as [FullView] is looking for: "maxi eroe"
+[Thu Jun 18 09:59:28 2020] :: Fulvio as [FullView] is looking for: "maxi eroe"
+[Thu Jun 18 10:16:40 2020] :: Fulvio as [FullView] is looking for: "maxi eroe"
+[Thu Jun 18 10:27:37 2020] :: Fulvio as [FullView] is looking for: "eroe max"
+[Thu Jun 18 10:28:08 2020] :: Fulvio as [FullView] is looking for: "eroe"
+[Thu Jun 18 10:28:39 2020] :: Fulvio as [FullView] is looking for: "maxi eroe"
+[Thu Jun 18 10:29:14 2020] :: Fulvio as [FullView] is looking for: "eroe"
+[Thu Jun 18 10:34:35 2020] :: Fulvio as [FullView] is looking for: "batman"
+[Thu Jun 18 10:35:36 2020] :: Fulvio as [FullView] is looking for: "batman"
+[Thu Jun 18 10:36:03 2020] :: Fulvio as [FullView] is looking for: "supermaxi"
+[Thu Jun 18 10:36:06 2020] :: Fulvio as [FullView] - series 1
+[Thu Jun 18 10:36:13 2020] :: Fulvio as [FullView] - episode: Ralph SuperMaxiEroe 01x06 Una madre troppo curiosa
+
+[Thu Jun 18 10:36:30 2020] :: Fulvio as [FullView] - episode: Ralph SuperMaxiEroe 01x01 02 Il mistero della vali
+
+[Thu Jun 18 12:32:36 2020] :: Fulvio as [FullView] is looking for: "batman"
+[Thu Jun 18 12:33:29 2020] :: Fulvio as [FullView] is looking for: "hills 90210"
+[Thu Jun 18 12:33:35 2020] :: Fulvio as [FullView] - series 1
+[Thu Jun 18 12:33:40 2020] :: Fulvio as [FullView] - episode: Beverly Hills 90210 01x21 Il ballo di primavera av
+
+[Thu Jun 18 12:34:07 2020] :: Fulvio as [FullView] is looking for: "supermaxi"
+[Thu Jun 18 12:34:12 2020] :: Fulvio as [FullView] - series 1
+[Thu Jun 18 12:34:19 2020] :: Fulvio as [FullView] - episode: Ralph SuperMaxiEroe 02x11 Potenza dell ipnosi
+
+[Thu Jun 18 12:34:28 2020] :: Fulvio as [FullView] is looking for: "chernobyl"
+[Thu Jun 18 12:34:33 2020] :: Fulvio as [FullView] - episode: Ralph SuperMaxiEroe 02x16 Spionaggio sulla neve
+
+[Thu Jun 18 12:34:40 2020] :: Fulvio as [FullView] - series 1
+[Thu Jun 18 12:35:09 2020] :: Fulvio as [FullView] is looking for: "chernobyl"
+[Thu Jun 18 12:35:14 2020] :: Fulvio as [FullView] - series 1
+[Thu Jun 18 12:35:19 2020] :: Fulvio as [FullView] - episode: Chernobyl Diaries La mutazione 2012
+
+[Thu Jun 18 12:39:41 2020] :: Fulvio as [FullView] is looking for: "supermaxi"
+[Thu Jun 18 13:42:28 2020] :: Fulvio as [FullView] is looking for: "supermaxi"
+[Thu Jun 18 13:43:17 2020] :: Fulvio as [FullView] is looking for: "supermaxi"
+[Thu Jun 18 13:43:20 2020] :: Fulvio as [FullView] - series 1
+[Thu Jun 18 13:43:27 2020] :: Fulvio as [FullView] is looking for: "chernobyl"
+[Thu Jun 18 13:43:32 2020] :: Fulvio as [FullView] - series 1
+[Thu Jun 18 13:43:37 2020] :: Fulvio as [FullView] - episode: Chernobyl Diaries La mutazione 2012
+
