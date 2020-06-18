@@ -102,3 +102,28 @@ Fulvio as [FullView] is looking for: "i viaggiatori"
 
 [Thu Jun 18 10:36:30 2020] :: Fulvio as [FullView] - episode: Ralph SuperMaxiEroe 01x01 02 Il mistero della vali
 
+[Thu Jun 18 12:32:36 2020] :: Fulvio as [FullView] is looking for: "batman"
+[Thu Jun 18 12:33:29 2020] :: Fulvio as [FullView] is looking for: "hills 90210"
+[Thu Jun 18 12:33:35 2020] :: Fulvio as [FullView] - series 1
+[Thu Jun 18 12:33:40 2020] :: Fulvio as [FullView] - episode: Beverly Hills 90210 01x21 Il ballo di primavera av
+
+[Thu Jun 18 12:34:07 2020] :: Fulvio as [FullView] is looking for: "supermaxi"
+[Thu Jun 18 12:34:12 2020] :: Fulvio as [FullView] - series 1
+[Thu Jun 18 12:34:19 2020] :: Fulvio as [FullView] - episode: Ralph SuperMaxiEroe 02x11 Potenza dell ipnosi
+
+[Thu Jun 18 12:34:28 2020] :: Fulvio as [FullView] is looking for: "chernobyl"
+[Thu Jun 18 12:34:33 2020] :: Fulvio as [FullView] - episode: Ralph SuperMaxiEroe 02x16 Spionaggio sulla neve
+
+[Thu Jun 18 12:34:40 2020] :: Fulvio as [FullView] - series 1
+[Thu Jun 18 12:35:09 2020] :: Fulvio as [FullView] is looking for: "chernobyl"
+[Thu Jun 18 12:35:14 2020] :: Fulvio as [FullView] - series 1
+[Thu Jun 18 12:35:19 2020] :: Fulvio as [FullView] - episode: Chernobyl Diaries La mutazione 2012
+
+[Thu Jun 18 12:39:41 2020] :: Fulvio as [FullView] is looking for: "supermaxi"
+[Thu Jun 18 13:42:28 2020] :: Fulvio as [FullView] is looking for: "supermaxi"
+[Thu Jun 18 13:43:17 2020] :: Fulvio as [FullView] is looking for: "supermaxi"
+[Thu Jun 18 13:43:20 2020] :: Fulvio as [FullView] - series 1
+[Thu Jun 18 13:43:27 2020] :: Fulvio as [FullView] is looking for: "chernobyl"
+[Thu Jun 18 13:43:32 2020] :: Fulvio as [FullView] - series 1
+[Thu Jun 18 13:43:37 2020] :: Fulvio as [FullView] - episode: Chernobyl Diaries La mutazione 2012
+

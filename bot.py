@@ -5,14 +5,14 @@ from typing import List, Dict, Tuple
 from telegram import Config
 from telegram import Update
 from telegram import Message
-from botvallottacinema import BotVallottaCinema
 
 class Bot:
 
   def __init__(self, pathConfig):
     with open(pathConfig, 'r') as f:
-      self.config = Config(json.load(f))
-      self._apiUrl = f'{self.config.url}{self.config.token}'
+      self._config = Config(json.load(f))
+      self._apiUrl = f'{self._config.url}{self._config.token}'
+      self._commands = self._config.commands
       self._updates: List[Update]
   
 
@@ -22,7 +22,6 @@ class Bot:
     lastUpdateId = lastUpdateId + 1 if lastUpdateId > 0 else 0
     updateId = lastUpdateId
     print('init', lastUpdateId)
-    self.cinema = BotVallottaCinema(self._apiUrl, self.config.idBot, self.config.commanads, self)
     time.sleep(2.5)
     
     while True:
@@ -42,13 +41,17 @@ class Bot:
       time.sleep(2)
 
 
-  def sendMessage(self, msg: Dict):
-    req = requests.get(f'{self._apiUrl}/sendMessage', params=msg)
+  def sendMessage(self, chad_id: str, msg: str, parse_mode: str = ''):
+    requests.get(f'{self._apiUrl}/sendMessage', params={
+      'chat_id': chad_id,
+      'text': msg,
+      'parse_mode': parse_mode
+    })
 
+  # _dispatchAction must be implemented in subclasses
   def _dispatchAction(self, updates: List[Update]):
-    for update in updates:
-      self.cinema.dispatchAction(Update(update))
-
+    pass
+  
 
   def _getUpdate(self, offset='') -> List[Update]:
     self._updates = list(json.loads(requests.get(f'{self._apiUrl}/getUpdates?offset={offset}').text)['result'])

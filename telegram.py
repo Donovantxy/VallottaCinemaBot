@@ -9,7 +9,7 @@ class Config:
     self.username: str = obj['username']
     self.first_name: str = obj['first_name']
     self.idBot: str = obj['idBot']
-    self.commanads: List[str] = obj['commanads']
+    self.commands: List[str] = obj['commands']
     self.__obj = obj
   
   def __str__(self):
