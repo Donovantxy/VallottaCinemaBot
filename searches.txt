@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 Fulvio as [FullView] is looking for: "supergirl"
 Fulvio as [FullView] - series 3
 Fulvio as [FullView] - episode: Nana Supergirl 01 Una ragazza specialev5
@@ -128,3 +129,5 @@ Fulvio as [FullView] is looking for: "i viaggiatori"
 [Thu Jun 18 13:43:37 2020] :: Fulvio as [FullView] - episode: Chernobyl Diaries La mutazione 2012
 
 [Thu Jun 18 16:26:15 2020] :: Fulvio as [FullView] is looking for: "superman"
+=======
+>>>>>>> Stashed changes
