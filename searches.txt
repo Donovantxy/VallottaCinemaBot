@@ -158,4 +158,106 @@ episode_list: [('Ralph SuperMaxiEroe 01x01 02 Il mistero della vali', 'https://v
 episode_selected_index: 9
 url_show: https://akvideo.stream/swvideoidy/10948.html
 
+[Fri Jun 19 09:36:23 2020] :: Fulvio as [FullView] is looking for: "batman"
+[Fri Jun 19 09:36:28 2020] :: 
+user_id: 51914389
+chat_id: 51914389
+first_name: Fulvio
+username: FullView
+cmd: /find batman
+title_selected_index: 9
+episode_selected_index: 0
+title_selected: ('Batman 1989', 'https://altadefinizione.boutique/film/batman-1989-2/')
+url_show: https://altadefinizione.boutique/film/batman-1989-2/
+
+
+[Fri Jun 19 09:36:44 2020] :: Fulvio as [FullView] is looking for: "supermaxi"
+[Fri Jun 19 09:36:51 2020] :: Fulvio as [FullView] - series 0
+[Fri Jun 19 09:36:58 2020] :: Fulvio as [FullView] - series 0
+[Fri Jun 19 09:39:00 2020] :: Fulvio as [FullView] is looking for: "supermaxi"
+[Fri Jun 19 09:39:05 2020] :: Fulvio as [FullView] - series 0
+[Fri Jun 19 09:39:12 2020] :: Fulvio as [FullView] - page 1
+[Fri Jun 19 09:39:19 2020] :: 
+user_id: 51914389
+chat_id: 51914389
+first_name: Fulvio
+username: FullView
+cmd: /find supermaxi
+title_selected_index: 0
+episode_selected_index: 36
+title_selected: ('Ralph SuperMaxiEroe 01x01 02 Il mistero della vali', 'https://vcrypt.pw/akv/u2cai0rz62lk')
+url_show: https://akvideo.stream/swvideoidy/10998.html
+
+
+[Fri Jun 19 09:40:28 2020] :: Fulvio as [FullView] is looking for: "batman"
+[Fri Jun 19 09:40:34 2020] :: 
+user_id: 51914389
+chat_id: 51914389
+first_name: Fulvio
+username: FullView
+cmd: /find batman
+title_selected_index: 9
+episode_selected_index: 0
+title_selected: Batman 1989
+url_show: https://altadefinizione.boutique/film/batman-1989-2/
+
+
+[Fri Jun 19 09:40:46 2020] :: Fulvio as [FullView] is looking for: "supermaxi"
+[Fri Jun 19 09:40:49 2020] :: Fulvio as [FullView] - series 0
+[Fri Jun 19 09:40:54 2020] :: Fulvio as [FullView] - page 1
+[Fri Jun 19 09:40:58 2020] :: 
+user_id: 51914389
+chat_id: 51914389
+first_name: Fulvio
+username: FullView
+cmd: /find supermaxi
+title_selected_index: 0
+episode_selected_index: 37
+title_selected: Ralph SuperMaxiEroe 01x01 02 Il mistero della vali
+url_show: https://akvideo.stream/swvideoidy/10999.html
+
+
+[Fri Jun 19 09:44:00 2020] :: Fulvio as [FullView] is looking for: "supermaxi"
+[Fri Jun 19 09:44:03 2020] :: Fulvio as [FullView] - series 0
+[Fri Jun 19 09:44:09 2020] :: 
+user_id: 51914389
+chat_id: 51914389
+first_name: Fulvio
+username: FullView
+cmd: /find supermaxi
+title_selected_index: 0
+episode_selected_index: 5
+title_selected: Ralph SuperMaxiEroe 01x01 02 Il mistero della vali
+url_show: https://akvideo.stream/swvideoidy/10941.html
+
+
+[Fri Jun 19 09:52:57 2020] :: Fulvio as [FullView] is looking for: "supermaxi"
+[Fri Jun 19 09:53:00 2020] :: Fulvio as [FullView] - series 0
+[Fri Jun 19 09:53:03 2020] :: Fulvio as [FullView] - page 1
+[Fri Jun 19 09:53:08 2020] :: 
+user_id: 51914389
+chat_id: 51914389
+first_name: Fulvio
+username: FullView
+cmd: /find supermaxi
+title_selected_index: 0
+episode_selected_index: 37
+title_selected: Ralph SuperMaxiEroe 01x01 02 Il mistero della vali
+url_show: https://akvideo.stream/swvideoidy/10999.html
+
+
+[Fri Jun 19 09:54:34 2020] :: Fulvio as [FullView] is looking for: "supermaxi"
+[Fri Jun 19 09:54:39 2020] :: Fulvio as [FullView] - series 0
+[Fri Jun 19 09:54:42 2020] :: Fulvio as [FullView] - page 1
+[Fri Jun 19 09:54:46 2020] :: 
+user_id: 51914389
+chat_id: 51914389
+first_name: Fulvio
+username: FullView
+cmd: /find supermaxi
+title_selected_index: 0
+episode_selected_index: 37
+title_selected: Ralph SuperMaxiEroe 03x08 Il ranger dello spazio
+url_show: https://akvideo.stream/swvideoidy/10999.html
+
 
