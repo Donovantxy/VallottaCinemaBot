@@ -100,6 +100,7 @@ class BotVallottaCinema(Bot):
           self.sendAction(Chat(message.chat).id)
           if any(command for command in ['/find', '/cerca'] if command in message.text):
             self.find(message)
+<<<<<<< HEAD
           elif user.id in self.user_requests:
             if '/movie' in message.text:
               self.showMovieUrl(message)
@@ -114,6 +115,18 @@ class BotVallottaCinema(Bot):
               self.showSeriesEpisodes(message, -1, True)
           else:
             self.sendMessage(Chat(message.chat).id, 'Run a search first')
+=======
+          elif '/movie' in message.text:
+            self.showMovieUrl(message)
+          elif '/series' in message.text:
+            self.index = int(message.text.replace('/series', '')) - 1
+            self.showSeriesEpisodes(message, self.index)
+          elif '/ep' in message.text:
+            self.showEpisodeUrl(message)
+          elif '/next' in message.text:
+            self.curr_next += 1
+            self.showSeriesEpisodes(message, self.index, True)
+>>>>>>> fixes
           
 
   def find(self, msg: Message):
