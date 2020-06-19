@@ -66,11 +66,9 @@ chat_id: {self.chat_id}
 first_name: {self.first_name}
 username: {self.username}
 cmd: {self.cmd}
-results: {self.results}
-title_selected_index: {self.title_selected_index}
-episode_list: {self.episode_list}
-episode_selected_index: {self.episode_selected_index}
 title_selected: {self.title_selected}
+title_selected_index: {self.title_selected_index}
+episode_selected_index: {self.episode_selected_index}
 url_show: {self.url_show}\n\n
 '''
 
