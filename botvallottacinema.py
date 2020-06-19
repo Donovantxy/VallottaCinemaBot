@@ -47,7 +47,7 @@ from bot import Bot
 '''
 
 class UserRequests:
-  def __init__(self, user: User, chat: Chat, cmd: str, title_selected: int = 0, episode_selected: int = 0):
+  def __init__(self, user: User, chat: Chat, cmd: str, title_selected: int = -1, episode_selected: int = -1):
     self.user_id: str = user.id
     self.chat_id: str = chat.id
     self.first_name: str = user.first_name
@@ -55,10 +55,11 @@ class UserRequests:
     self.cmd: str = cmd
     self.mes: MoviesAndSeries = MoviesAndSeries()
     self.title_selected_index: int = title_selected
-    self.title_selected: tuple = tuple()
+    self.title_selected: str = ''
+    self.episode_selected: str = ''
     self.episode_list: list() = list()
     self.episode_selected_index: int = episode_selected
-    self.url_show: tuple = tuple()
+    self.url_show: str = ''
   def __str__(self):
     return f'''
 user_id: {self.user_id}
@@ -69,7 +70,8 @@ cmd: {self.cmd}
 title_selected_index: {self.title_selected_index}
 episode_selected_index: {self.episode_selected_index}
 title_selected: {self.title_selected}
-url_show: {self.url_show}\n\n
+episode_selected: {self.episode_selected}
+url_show: {self.url_show}
 '''
 
 
@@ -90,7 +92,7 @@ class BotVallottaCinema(Bot):
 
   def dispatchAction(self, update: Update):
     message = Message(update.message if update.message else update.edited_message)
-
+    user = User(message.fromUser)
     if message.entities:
       for entity in message.entities:
         entity = MessageEntity(entity)
@@ -98,16 +100,20 @@ class BotVallottaCinema(Bot):
           self.sendAction(Chat(message.chat).id)
           if any(command for command in ['/find', '/cerca'] if command in message.text):
             self.find(message)
-          elif '/movie' in message.text:
-            self.showMovieUrl(message)
-          elif '/series' in message.text:
-            self.index = int(message.text.replace('/series', '')) - 1
-            self.showSeriesEpisodes(message, self.index)
-          elif '/ep' in message.text:
-            self.showEpisodeUrl(message)
-          elif '/next' in message.text:
-            self.curr_next += 1
-            self.showSeriesEpisodes(message, int(self.index), True)
+          elif user.id in self.user_requests:
+            if '/movie' in message.text:
+              self.showMovieUrl(message)
+            elif '/series' in message.text:
+              index = int(message.text.replace('/series', '')) - 1
+              self.user_requests[user.id].title_selected = self.user_requests[user.id].mes.list_title[index][0]
+              self.showSeriesEpisodes(message, index)
+            elif '/ep' in message.text:
+              self.showEpisodeUrl(message)
+            elif '/next' in message.text:
+              self.curr_next += 1
+              self.showSeriesEpisodes(message, -1, True)
+          else:
+            self.sendMessage(Chat(message.chat).id, 'Run a search first')
           
 
   def find(self, msg: Message):
@@ -116,7 +122,7 @@ class BotVallottaCinema(Bot):
     user = User(msg.fromUser)
     username = f' as [{chat.username}]' if chat.username else ''
     self.user_requests[user.id] = UserRequests(user, chat, msg.text)
-    self.appendToSearchesFile(f'{chat.first_name}{username} is looking for: "{query}"\n')
+    self.appendToSearchesFile(f'\n{chat.first_name}{username} is looking for: "{query}"', True)
     if len(query) > 1:
       self.user_requests[user.id].mes = self.mes
       founds = self.user_requests[user.id].mes.getTitleList(query)
@@ -141,29 +147,32 @@ class BotVallottaCinema(Bot):
       self.user_requests[user.id].title_selected = self.user_requests[user.id].mes.list_title[index][0]
       self.user_requests[user.id].url_show = self.user_requests[user.id].mes.list_title[index][1]
       self.sendMessage(chat.id, txt, 'HTML')
-      self.appendToSearchesFile(f'{self.user_requests[user.id]}')
+      self.appendToSearchesFile(f'{self.user_requests[user.id]}', True, startWith='\n\n')
     except IndexError:
       print(f'ERROR "IndexError" in showMovieUrl for index[{index}]\n{self.mes}')
       self.sendMessage(chat.id, f'Error occurred, you\'re selecting a wrong movie number, not belonged to your last search.')
       
 
   def showSeriesEpisodes(self, msg, index: int, isNext = False):
-    user = User(msg.fromUser)
-    list_episode = self.user_requests[user.id].mes.getEpisodeList(index)
     results = ''
+    user = User(msg.fromUser)
     chat = Chat(msg.chat)
     username = f' as [{self.user_requests[user.id].username}]' if self.user_requests[user.id].username else ''
-    self.user_requests[user.id].title_selected_index = index
-    self.user_requests[user.id].title_selected = list_episode[index][0]
-    start = 0
+    episode_list = list()
     if isNext:
       start = self.curr_next * 24
-      self.appendToSearchesFile(f'{self.user_requests[user.id].first_name}{username} - page {self.curr_next}\n')
+      episode_list = self.user_requests[user.id].episode_list
+      self.appendToSearchesFile(f'{self.user_requests[user.id].first_name}{username} - page {self.curr_next}\n', True)
     else:
-      self.appendToSearchesFile(f'{self.user_requests[user.id].first_name}{username} - series {index}\n')
-    for i, ep in enumerate(list_episode[start : start+24]):
+      episode_list = self.user_requests[user.id].mes.getEpisodeList(index)
+      self.user_requests[user.id].episode_list = episode_list
+      self.user_requests[user.id].title_selected_index = index
+      start = 0
+      self.appendToSearchesFile(f'{self.user_requests[user.id].first_name}{username} - series {index}\n', True)
+    
+    for i, ep in enumerate(episode_list[start : start+24]):
       results += f'/ep<b>{i+start+1}</b> {ep[0]}\n\n'
-    if len(list_episode[start : start+24]) == 24:
+    if len(episode_list[start : start+24]) == 24:
       results += '/next episodes'
     self.sendMessage(chat.id, results, 'HTML')
 
@@ -175,10 +184,10 @@ class BotVallottaCinema(Bot):
     try:
       ep = self.user_requests[user.id].mes.list_episodes[index]
       self.user_requests[user.id].episode_selected_index = index
-      self.user_requests[user.id].title_selected = ep[0]
+      self.user_requests[user.id].episode_selected = ep[0]
       url_show = self.user_requests[user.id].mes.getShowUrl(index)
       self.user_requests[user.id].url_show = url_show
-      self.appendToSearchesFile(f'{self.user_requests[user.id]}')
+      self.appendToSearchesFile(f'{self.user_requests[user.id]}', True, startWith='\n\n')
       msg = f'<a href="{url_show}">{ep[0]}</a>',
       self.sendMessage(chat.id, msg, 'HTML')
     except IndexError:
@@ -186,8 +195,14 @@ class BotVallottaCinema(Bot):
       self.sendMessage(chat.id, f'Error occurred, you\'re selecting a wrong episode number, not belonged to your last search.')
 
 
-  def appendToSearchesFile(self, content):
-    with open('searches.txt', 'a') as f:
-      f.write(f'[{time.ctime()}] :: {content}')
+  def appendToSearchesFile(self, content, atBeginning = False, startWith = ''):
+    if not atBeginning:
+      with open('searches.txt', 'a') as f:
+        f.write(f'[{time.ctime()}] :: {content}')
+    else:
+      with open('searches.txt', 'r+') as f:
+        file_content = f.read()
+        f.seek(0, 0)
+        f.write(f'{startWith}[{time.ctime()}] :: {content}{file_content}')
       
   
