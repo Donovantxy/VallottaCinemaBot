@@ -1,13 +1,13 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 Fulvio as [FullView] is looking for: "supergirl"
 Fulvio as [FullView] - series 3
 Fulvio as [FullView] - episode: Nana Supergirl 01 Una ragazza specialev5
+=======
+>>>>>>> d873e5173477fb321e808e03ea62099eb9c59318
 
-Fulvio as [FullView] is looking for: "uomo bionico"
-Fulvio as [FullView] is looking for: "milioni di dollari"
-Fulvio as [FullView] - series 0
-Fulvio as [FullView] - episode: L Uomo da sei Milioni di Dollari 00x03 Complotto I
 
+<<<<<<< HEAD
 Fulvio as [FullView] is looking for: "donna bionica"
 Fulvio as [FullView] - series 0
 Fulvio as [FullView] - episode: LA DONNA BIONICA 01x01 Bentornata Jaime Parte 1
@@ -131,3 +131,35 @@ Fulvio as [FullView] is looking for: "i viaggiatori"
 [Thu Jun 18 16:26:15 2020] :: Fulvio as [FullView] is looking for: "superman"
 =======
 >>>>>>> Stashed changes
+=======
+[Fri Jun 19 11:10:54 2020] :: 
+user_id: 51914389
+chat_id: 51914389
+first_name: Fulvio
+username: FullView
+cmd: /find supermaxi
+title_selected_index: 0
+episode_selected_index: 40
+title_selected: Ralph Supermaxieroe
+episode_selected: Ralph SuperMaxiEroe 03x11 Il complesso rock
+url_show: https://akvideo.stream/swvideoidy/11006.html
+[Fri Jun 19 11:10:50 2020] :: Fulvio as [FullView] - page 1
+[Fri Jun 19 11:10:47 2020] :: Fulvio as [FullView] - series 0
+[Fri Jun 19 11:10:42 2020] :: 
+Fulvio as [FullView] is looking for: "supermaxi"
+
+[Fri Jun 19 11:10:27 2020] :: 
+user_id: 51914389
+chat_id: 51914389
+first_name: Fulvio
+username: FullView
+cmd: /find superman
+title_selected_index: 2
+episode_selected_index: -1
+title_selected: Superman 1978
+episode_selected: 
+url_show: https://altadefinizione.boutique/film/superman-1978-streaming/
+[Fri Jun 19 11:10:24 2020] :: 
+Fulvio as [FullView] is looking for: "superman"[Fri Jun 19 11:10:19 2020] :: 
+Fulvio as [FullView] is looking for: "batman"
+>>>>>>> d873e5173477fb321e808e03ea62099eb9c59318
