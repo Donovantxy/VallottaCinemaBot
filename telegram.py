@@ -4,6 +4,7 @@ import json
 class Config:
   def __init__(self, obj: Dict):
     self.token: str = obj['token']
+    self.ga_tracking_id: str = obj['ga-tracking-id']
     self.domain: str = obj['domain']
     self.url: str = obj['url']
     self.username: str = obj['username']

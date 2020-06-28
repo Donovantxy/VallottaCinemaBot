@@ -5,15 +5,18 @@ from typing import List, Dict, Tuple
 from telegram import Config
 from telegram import Update
 from telegram import Message
+from telegram import User
+
 
 class Bot:
 
-  def __init__(self, pathConfig):
+  def __init__(self, pathConfig, timingForChekingUpdates: int = 2):
     with open(pathConfig, 'r') as f:
       self._config = Config(json.load(f))
       self._apiUrl = f'{self._config.url}{self._config.token}'
       self._commands = self._config.commands
       self._updates: List[Update]
+      self._timingForChekingUpdates = timingForChekingUpdates
   
 
   def run(self):
@@ -22,7 +25,7 @@ class Bot:
     lastUpdateId = lastUpdateId + 1 if lastUpdateId > 0 else 0
     updateId = lastUpdateId
     print('init', lastUpdateId)
-    time.sleep(2.5)
+    time.sleep(self._timingForChekingUpdates)
     
     while True:
       update = self._getUpdate(updateId)
@@ -38,7 +41,7 @@ class Bot:
         lastUpdateId += 1
         updateId = lastUpdateId
       
-      time.sleep(2)
+      time.sleep(self._timingForChekingUpdates)
 
 
   def sendAction(self, chat_id: str, action: str = 'typing'):
@@ -55,9 +58,6 @@ class Bot:
       'parse_mode': parse_mode
     })
 
-  # _loopUpdates must be implemented in subclasses
-  def _loopUpdates(self, updates: List[Update]):
-    pass
   
 
   def _getUpdate(self, offset='') -> List[Update]:
@@ -71,3 +71,18 @@ class Bot:
 
   def _printUpdate(self):
     print(json.dumps(self._updates, indent=2))
+ 
+  def _sendAnalytics(self, category: str, action: str, label: str, user: User):
+    user = User(user)
+    name = user.first_name
+    if user.username:
+      name += f' [{user.username}]: '
+    payload = f'ec={category}&ea={action}&el={name}{label}'
+    requests.post(f'https://www.google-analytics.com/collect?v=1&tid={self._config.ga_tracking_id}&cid={time.time()}&{payload}')
+    print('GA', f'https://www.google-analytics.com/collect?v=1&tid={self._config.ga_tracking_id}&cid={time.time()}&{payload}')
+    
+
+  # _loopUpdates must be implemented in subclasses
+  def _loopUpdates(self, updates: List[Update]):
+    pass
+  

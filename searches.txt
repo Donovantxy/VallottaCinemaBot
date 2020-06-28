@@ -1,0 +1,15 @@
+[Sat Jun 20 13:39:05 2020] :: Fulvio as [FullView] is looking for: "supermaxi"
+
+
+[Sat Jun 20 08:55:18 2020] :: 
+user_id: 51914389
+chat_id: 51914389
+first_name: Fulvio
+username: FullView
+cmd: /find express
+title_selected_index: 1
+episode_selected_index: -1
+title_selected: Il Ragazzo Del Pony Express 1986
+episode_selected: 
+url_show: https://altadefinizione.money/film/il-ragazzo-del-pony-express-1986/
+[Sat Jun 20 08:55:02 2020] :: Fulvio as [FullView] is looking for: "express"
