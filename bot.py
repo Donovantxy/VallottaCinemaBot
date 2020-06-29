@@ -73,13 +73,15 @@ class Bot:
     print(json.dumps(self._updates, indent=2))
  
   def _sendAnalytics(self, category: str, action: str, label: str, user: User):
-    user = User(user)
     name = user.first_name
     if user.username:
-      name += f' [{user.username}]: '
+      name += f'[{user.username}]: '
     payload = f'ec={category}&ea={action}&el={name}{label}'
-    requests.post(f'https://www.google-analytics.com/collect?v=1&tid={self._config.ga_tracking_id}&cid={time.time()}&{payload}')
-    print('GA', f'https://www.google-analytics.com/collect?v=1&tid={self._config.ga_tracking_id}&cid={time.time()}&{payload}')
+    # payload = f'ec={category}&ea={action}&el={name}'
+    r = requests.post(f'https://www.google-analytics.com/collect?v=1&t=event&tid={self._config.ga_tracking_id}&cid={time.time()}&{payload}')
+    # print('GA', f'https://www.google-analytics.com/collect?v=1&t=event&tid={self._config.ga_tracking_id}&cid={int(time.time())}&{payload}')
+    # print(r.content)
+    # print(r.headers)
     
 
   # _loopUpdates must be implemented in subclasses

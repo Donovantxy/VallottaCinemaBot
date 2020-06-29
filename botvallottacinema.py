@@ -135,8 +135,10 @@ class BotVallottaCinema(Bot):
           for i, title in enumerate(founds[:10]):
             results += f'/{"series" if self.user_requests[user.id].mes.isSeries(i) else "movie"}<b>{i+1}</b> {title[0]}\n\n'
           self.sendMessage(chat.id, results, 'HTML')
+          self._sendAnalytics('cinema', 'FIND', f'{query} with {len(founds)} results', user)
       else:
         self.sendMessage(chat.id, 'No results were found')
+        self._sendAnalytics('cinema', 'FIND', f'{query} with 0 results', user)
 
 
   def showMovieUrl(self, msg: Message):
