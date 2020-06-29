@@ -75,8 +75,8 @@ class Bot:
   def _sendAnalytics(self, category: str, action: str, label: str, user: User):
     name = user.first_name
     if user.username:
-      name += f'[{user.username}]: '
-    payload = f'ec={category}&ea={action}&el={name}{label}'
+      name += f'[{user.username}]'
+    payload = f'ec={category}&ea={action}&el={name}: {label}'
     # payload = f'ec={category}&ea={action}&el={name}'
     r = requests.post(f'https://www.google-analytics.com/collect?v=1&t=event&tid={self._config.ga_tracking_id}&cid={time.time()}&{payload}')
     # print('GA', f'https://www.google-analytics.com/collect?v=1&t=event&tid={self._config.ga_tracking_id}&cid={int(time.time())}&{payload}')
