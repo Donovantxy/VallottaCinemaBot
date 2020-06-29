@@ -151,9 +151,11 @@ class BotVallottaCinema(Bot):
       self.user_requests[user.id].title_selected = self.user_requests[user.id].mes.list_title[index][0]
       self.user_requests[user.id].url_show = self.user_requests[user.id].mes.list_title[index][1]
       self.sendMessage(chat.id, txt, 'HTML')
+      self._sendAnalytics('cinema', 'MOVIE', f'{self.user_requests[user.id].title_selected}', user)
       self.appendToSearchesFile(f'{self.user_requests[user.id]}', True, startWith='\n\n')
     except IndexError:
       print(f'ERROR "IndexError" in showMovieUrl for index[{index}]\n{self.user_requests[user.id].mes}')
+      self._sendAnalytics('cinema', 'MOVIE', 'wrong movie index selected', user)
       self.sendMessage(chat.id, f'Error occurred, you\'re selecting a wrong movie number, not belonged to your last search.')
       
 
@@ -172,6 +174,7 @@ class BotVallottaCinema(Bot):
       self.user_requests[user.id].episode_list = episode_list
       self.user_requests[user.id].title_selected_index = index
       start = 0
+      self._sendAnalytics('cinema', 'SERIES', f'{self.user_requests[user.id].title_selected}', user)
       self.appendToSearchesFile(f'{self.user_requests[user.id].first_name}{username} - series {index}\n', True)
     
     for i, ep in enumerate(episode_list[start : start+24]):
@@ -191,11 +194,13 @@ class BotVallottaCinema(Bot):
       self.user_requests[user.id].episode_selected = ep[0]
       url_show = self.user_requests[user.id].mes.getShowUrl(index)
       self.user_requests[user.id].url_show = url_show
+      self._sendAnalytics('cinema', 'EPISODE', f'{self.user_requests[user.id].episode_selected}', user)
       self.appendToSearchesFile(f'{self.user_requests[user.id]}', True, startWith='\n\n')
       msg = f'<a href="{url_show}">{ep[0]}</a>',
       self.sendMessage(chat.id, msg, 'HTML')
     except IndexError:
       print(f'ERROR "IndexError" in showEpisodeUrl for index[{index}]\n{self.user_requests[user.id].mes}')
+      self._sendAnalytics('cinema', 'SERIES', 'wrong episode index selected', user)
       self.sendMessage(chat.id, f'Error occurred, you\'re selecting a wrong episode number, not belonged to your last search.')
 
 
