@@ -1,0 +1,188 @@
+[Sun Jun 28 14:02:25 2020] :: Fulvio as [FullView] is looking for: "flash"
+[Sun Jun 28 14:01:42 2020] :: Fulvio as [FullView] is looking for: "reasons"
+[Sun Jun 28 14:01:16 2020] :: Fulvio as [FullView] is looking for: "13 reason"
+
+
+[Sat Jun 27 18:08:05 2020] :: 
+user_id: 51914389
+chat_id: 51914389
+first_name: Fulvio
+username: FullView
+cmd: /find professione vacanze
+title_selected_index: 0
+episode_selected_index: 2
+title_selected: Professione Vacanze
+episode_selected: Professione Vacanze 03 Un complicato intrigo di ca
+url_show: https://akvideo.stream/swvideoidg/40853.html
+
+
+[Sat Jun 27 14:57:15 2020] :: 
+user_id: 51914389
+chat_id: 51914389
+first_name: Fulvio
+username: FullView
+cmd: /find professione vacanze
+title_selected_index: 0
+episode_selected_index: 1
+title_selected: Professione Vacanze
+episode_selected: Professione Vacanze 02 Nove settimane e un mazzo a
+url_show: https://akvideo.stream/swvideoidg/40852.html
+
+
+[Sat Jun 27 13:51:53 2020] :: 
+user_id: 51914389
+chat_id: 51914389
+first_name: Fulvio
+username: FullView
+cmd: /find professione vacanze
+title_selected_index: 0
+episode_selected_index: 0
+title_selected: Professione Vacanze
+episode_selected: Professione Vacanze 01 Speriamo che sia vacanza av
+url_show: https://akvideo.stream/swvideoidg/40851.html
+[Sat Jun 27 13:51:48 2020] :: Fulvio as [FullView] - series 0
+[Sat Jun 27 13:51:41 2020] :: Fulvio as [FullView] is looking for: "professione vacanze"
+
+
+[Sat Jun 27 13:51:08 2020] :: 
+user_id: 51914389
+chat_id: 51914389
+first_name: Fulvio
+username: FullView
+cmd: /find pierino
+title_selected_index: 0
+episode_selected_index: -1
+title_selected: Pierino Medico Della Saub 1981
+episode_selected: 
+url_show: https://altadefinizione.money/film/pierino-medico-della-saub-1981/
+[Sat Jun 27 13:06:08 2020] :: Fulvio as [FullView] is looking for: "pierino"
+[Sat Jun 27 13:05:50 2020] :: Fulvio as [FullView] is looking for: "polizia"
+[Sat Jun 27 13:05:35 2020] :: Fulvio as [FullView] is looking for: "scuola di polizia"
+
+
+[Sat Jun 27 12:06:08 2020] :: 
+user_id: 51914389
+chat_id: 51914389
+first_name: Fulvio
+username: FullView
+cmd: /find professione vacanze
+title_selected_index: 0
+episode_selected_index: 0
+title_selected: Professione Vacanze
+episode_selected: Professione Vacanze 01 Speriamo che sia vacanza av
+url_show: https://akvideo.stream/swvideoidg/40851.html
+[Sat Jun 27 11:14:03 2020] :: Fulvio as [FullView] - series 0
+[Sat Jun 27 11:13:57 2020] :: Fulvio as [FullView] is looking for: "professione vacanze"
+[Sat Jun 27 10:15:33 2020] :: Fulvio as [FullView] is looking for: "whiz kids"
+[Sat Jun 27 10:10:42 2020] :: Fulvio as [FullView] is looking for: "computer"
+[Sat Jun 27 10:09:36 2020] :: Fulvio as [FullView] is looking for: "4 ragazzi"
+[Sat Jun 27 10:06:08 2020] :: Fulvio as [FullView] is looking for: "del computer"
+[Sat Jun 27 09:59:26 2020] :: Fulvio as [FullView] is looking for: "riptide"
+
+
+[Tue Jun 23 08:57:34 2020] :: 
+user_id: 51914389
+chat_id: 51914389
+first_name: Fulvio
+username: FullView
+cmd: /find melrose place
+title_selected_index: 0
+episode_selected_index: 0
+title_selected: Melrose Place 1992
+episode_selected: Melrose Place 01x01 Pilot avi
+url_show: https://akvideo.stream/swvideoidy/122465.html
+[Tue Jun 23 08:57:26 2020] :: Fulvio as [FullView] - series 0
+[Tue Jun 23 08:57:14 2020] :: Fulvio as [FullView] is looking for: "melrose place"
+
+
+[Mon Jun 22 22:35:43 2020] :: 
+user_id: 51914389
+chat_id: 51914389
+first_name: Fulvio
+username: FullView
+cmd: /find visitors
+title_selected_index: 1
+episode_selected_index: 0
+title_selected: V Visitors - 1985
+episode_selected: V Visitors 01x01 V Part I
+url_show: https://akvideo.stream/swvideoidy/9945.html
+[Mon Jun 22 22:35:03 2020] :: Fulvio as [FullView] - series 1
+[Mon Jun 22 22:34:55 2020] :: Fulvio as [FullView] is looking for: "visitors"
+
+
+[Mon Jun 22 22:29:36 2020] :: 
+user_id: 51914389
+chat_id: 51914389
+first_name: Fulvio
+username: FullView
+cmd: /find hills 90210
+title_selected_index: 0
+episode_selected_index: 50
+title_selected: Beverly Hills 90210
+episode_selected: Beverly Hills 90210 02x28 Preparativi Di Nozze avi
+url_show: https://akvideo.stream/swvideoidy/107330.html
+[Mon Jun 22 22:29:25 2020] :: Fulvio as [FullView] - page 2
+[Mon Jun 22 22:29:03 2020] :: Fulvio as [FullView] - page 1
+[Mon Jun 22 22:28:55 2020] :: Fulvio as [FullView] - series 0
+[Mon Jun 22 22:28:48 2020] :: Fulvio as [FullView] is looking for: "hills 90210"
+
+
+[Mon Jun 22 13:39:07 2020] :: 
+user_id: 51914389
+chat_id: 51914389
+first_name: Fulvio
+username: FullView
+cmd: /find supercar
+title_selected_index: 1
+episode_selected_index: 8
+title_selected: Supercar
+episode_selected: SuperCar 01x09 Operazione Oro
+url_show: https://akvideo.stream/swvideoidy/9180.html
+[Mon Jun 22 13:38:55 2020] :: Fulvio as [FullView] - series 1
+
+
+[Mon Jun 22 13:09:29 2020] :: 
+user_id: 51914389
+chat_id: 51914389
+first_name: Fulvio
+username: FullView
+cmd: /find supercar
+title_selected_index: 0
+episode_selected_index: 0
+title_selected: Supercar Gattiger
+episode_selected: Supercar Gattiger 01 La Grande Corsa Parte 1 avi
+url_show: https://akvideo.stream/swvideoidy/125998.html
+[Mon Jun 22 13:09:21 2020] :: Fulvio as [FullView] - series 0
+[Mon Jun 22 13:09:08 2020] :: Fulvio as [FullView] is looking for: "supercar"
+[Mon Jun 22 12:47:27 2020] :: Fulvio as [FullView] - series 5
+[Mon Jun 22 12:47:16 2020] :: Fulvio as [FullView] is looking for: "nana"
+
+
+[Mon Jun 22 12:27:33 2020] :: 
+user_id: 51914389
+chat_id: 51914389
+first_name: Fulvio
+username: FullView
+cmd: /find supermaxi
+title_selected_index: 0
+episode_selected_index: 0
+title_selected: Ralph Supermaxieroe
+episode_selected: Ralph SuperMaxiEroe 01x01 02 Il mistero della vali
+url_show: https://akvideo.stream/swvideoidy/10933.html
+[Mon Jun 22 12:27:27 2020] :: Fulvio as [FullView] - series 0
+[Mon Jun 22 12:27:21 2020] :: Fulvio as [FullView] is looking for: "supermaxi"
+[Sat Jun 20 13:39:05 2020] :: Fulvio as [FullView] is looking for: "supermaxi"
+
+
+[Sat Jun 20 08:55:18 2020] :: 
+user_id: 51914389
+chat_id: 51914389
+first_name: Fulvio
+username: FullView
+cmd: /find express
+title_selected_index: 1
+episode_selected_index: -1
+title_selected: Il Ragazzo Del Pony Express 1986
+episode_selected: 
+url_show: https://altadefinizione.money/film/il-ragazzo-del-pony-express-1986/
+[Sat Jun 20 08:55:02 2020] :: Fulvio as [FullView] is looking for: "express"

@@ -1,0 +1,92 @@
+first 515621089
+init 515621090
+Traceback (most recent call last):
+  File "bot_no_webhook.py", line 8, in <module>
+    bot.run()
+  File "/root/VallottaCinemaBot/bot.py", line 41, in run
+    time.sleep(2)
+KeyboardInterrupt
+first 0
+init 0
+chat id  51914389 51914389
+chat id  152418932 152418932
+chat id  152418932 152418932
+chat id  51914389 51914389
+chat id  51914389 51914389
+chat id  51914389 51914389
+chat id  51914389 51914389
+chat id  152418932 152418932
+chat id  51914389 51914389
+chat id  51914389 51914389
+chat id  51914389 51914389
+chat id  621763974 621763974
+chat id  621763974 621763974
+chat id  621763974 621763974
+chat id  621763974 621763974
+chat id  51914389 51914389
+chat id  51914389 51914389
+chat id  51914389 51914389
+chat id  51914389 51914389
+chat id  51914389 51914389
+chat id  51914389 51914389
+chat id  51914389 51914389
+chat id  621763974 621763974
+chat id  621763974 621763974
+Traceback (most recent call last):
+  File "bot_no_webhook.py", line 8, in <module>
+    bot.run()
+  File "/root/VallottaCinemaBot/bot.py", line 37, in run
+    self._loopUpdates(update)
+  File "/root/VallottaCinemaBot/botvallottacinema.py", line 88, in _loopUpdates
+    self.dispatchAction(Update(update))
+  File "/root/VallottaCinemaBot/botvallottacinema.py", line 107, in dispatchAction
+    self.user_requests[user.id].title_selected = self.user_requests[user.id].mes.list_title[index][0]
+IndexError: list index out of range
+first 515621157
+init 515621158
+chat id  51914389 51914389
+chat id  51914389 51914389
+Traceback (most recent call last):
+  File "bot_no_webhook.py", line 8, in <module>
+    bot.run()
+  File "/root/VallottaCinemaBot/bot.py", line 37, in run
+    self._loopUpdates(update)
+  File "/root/VallottaCinemaBot/botvallottacinema.py", line 88, in _loopUpdates
+    self.dispatchAction(Update(update))
+  File "/root/VallottaCinemaBot/botvallottacinema.py", line 107, in dispatchAction
+    self.user_requests[user.id].title_selected = self.user_requests[user.id].mes.list_title[index][0]
+IndexError: list index out of range
+first 515621159
+init 515621160
+Traceback (most recent call last):
+  File "bot_no_webhook.py", line 8, in <module>
+    bot.run()
+  File "/root/VallottaCinemaBot/bot.py", line 28, in run
+    update = self._getUpdate(updateId)
+  File "/root/VallottaCinemaBot/bot.py", line 64, in _getUpdate
+    self._updates = list(json.loads(requests.get(f'{self._apiUrl}/getUpdates?offset={offset}').text)['result'])
+  File "/usr/local/lib/python3.6/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 381, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 976, in _validate_conn
+    conn.connect()
+  File "/usr/local/lib/python3.6/site-packages/urllib3/connection.py", line 308, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/usr/local/lib/python3.6/site-packages/urllib3/util/connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib64/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+KeyboardInterrupt
