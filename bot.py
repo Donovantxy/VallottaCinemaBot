@@ -1,11 +1,13 @@
 import requests
 import json
 import time
+import datetime
 from typing import List, Dict, Tuple
 from telegram import Config
 from telegram import Update
 from telegram import Message
 from telegram import User
+
 
 
 class Bot:
@@ -74,15 +76,26 @@ class Bot:
  
   def _sendAnalytics(self, category: str, action: str, label: str, user: User):
     name = user.first_name
+    now = datetime.datetime.now()
+    now = f'[{now.day}/{now.month}/{str(now.year)[2:]} {now.hour}:{now.minute}:{now.second}]'
+    # now = ''
     if user.username:
       name += f'[{user.username}]'
-    payload = f'ec={category}&ea={action}&el={name}: {label}'
-    # payload = f'ec={category}&ea={action}&el={name}'
-    r = requests.post(f'https://www.google-analytics.com/collect?v=1&t=event&tid={self._config.ga_tracking_id}&cid={time.time()}&{payload}')
-    # print('GA', f'https://www.google-analytics.com/collect?v=1&t=event&tid={self._config.ga_tracking_id}&cid={int(time.time())}&{payload}')
-    # print(r.content)
-    # print(r.headers)
-    
+    # payload = f'ec={category}&ea={action}&el={name}: {label}'
+    query_params = {
+      'v': '1',
+      't': 'event',
+      'tid': self._config.ga_tracking_id,
+      'cid': '555',
+      'ec': category,
+      'ea': action,
+      'el': f'{now}{name}: {label}',
+      'dp': '/'
+    }
+    r = requests.post('https://www.google-analytics.com/collect', params=query_params)
+    print(r.text)
+    print(f'[{now}]{name}: {label}')
+
 
   # _loopUpdates must be implemented in subclasses
   def _loopUpdates(self, updates: List[Update]):
